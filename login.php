@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                         $_SESSION["user_id"]=$user_id;
                         $_SESSION["loggedin"]=true;
                         //redirect user
-                        header("location: customerpage.php"); 
+                        header("location: customerpage.php");
                     }
                  }
                 }
