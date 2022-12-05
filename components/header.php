@@ -22,12 +22,19 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
+
+        <?php if(isset($_SESSION['loggedin']) and $_SESSION['loggedin']==true ): ?> 
+           <li class="nav-item">
+          <a class="nav-link" href="logout.php">Logout</a>
+        </li>
+          <?php else: ?>
         <li class="nav-item">
           <a class="nav-link" href="login.php">Login</a>
         </li>
-        <li class="nav-item">
+         <li class="nav-item">
           <a class="nav-link" href="register.php">Register</a>
         </li>
+        <?php endif; ?>
     </div>
   </div>
 </nav>
