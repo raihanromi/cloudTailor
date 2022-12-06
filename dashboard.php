@@ -28,13 +28,13 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">new Product</a>
+          <a class="nav-link" href="admindashboard/createnewproduct.php">New Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">order status</a>
+          <a class="nav-link" href="admindashboard/orderstatus.php">order status</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="#">User info
+          <a class="nav-link" href="admindashboard/userinfopage.php">User info
           </a>
         </li>
        
