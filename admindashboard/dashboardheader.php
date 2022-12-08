@@ -28,20 +28,18 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="admindashboard/createnewproduct.php">New Product</a>
+          <a class="nav-link" href="createnewproduct.php">New Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="admindashboard/orderstatus.php">order status</a>
+          <a class="nav-link" href="orderstatus.php">order status</a>
         </li>
-          <li class="nav-item">
-          <a class="nav-link" href="admindashboard/userinfopage.php">User info
-          </a>
+         <li class="nav-item">
+          <a class="nav-link" href="orderstatus.php">Login</a>
         </li>
-       
+         <li class="nav-item">
+          <a class="nav-link" href="orderstatus.php">Logout</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
-
-  </body>
-</html>

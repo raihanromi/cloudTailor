@@ -54,11 +54,11 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 <div class="container mt-4">
     <h3>Please Login Here:</h3>
     <form action="" method="post">  
-  <div class="mb-3">
+  <div class="col-md-3">
     <label for="exampleInputEmail1" class="form-label">Username</label>
     <input type="text" class="form-control" name="username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
   </div>
-  <div class="mb-3">
+  <div class="col-md-3 mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
     <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Enter password">
   </div>

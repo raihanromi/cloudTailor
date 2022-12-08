@@ -48,7 +48,7 @@
      <div class="navbar-collapse collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><?php echo "welcome ". $_SESSION['username']?></a>
+              <a class="nav-link" href="customerpage.php"><?php echo "welcome ". $_SESSION['username']?></a>
             </li>
           </ul>
         </div>

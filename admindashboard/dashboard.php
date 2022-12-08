@@ -1,6 +1,6 @@
 <?php  include_once("dashboardheader.php")?>
 
 
-<h1>Create New Product: </h1>
+<h1>Admin Dashboard</h1>
 
 <?php  include_once("dashboardfooter.php")?>
