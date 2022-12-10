@@ -2,6 +2,14 @@
 session_start()
 ?>
 
+<?php 
+
+  
+
+
+?>
+
+
 <?php include_once("components/header.php")?>
 
 <h1>Ready Made Dress</h1>
@@ -16,33 +24,8 @@ session_start()
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/dress_demo.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/dress_demo.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="img/dress_demo.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+ 
+ 
+
 
 <?php include_once("components/footer.php")?>
