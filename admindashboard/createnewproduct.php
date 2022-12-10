@@ -14,6 +14,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
     $product_type = $_POST['p_type'];
     $product_desc = $_POST['p_desc'];
     $product_price = $_POST['p_price'];
+    $product_title = $_POST['p_title'];
 
 	if ($error === 0) {
 		if ($img_size > 12500000) {
@@ -31,8 +32,8 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				move_uploaded_file($tmp_name, $img_upload_path);
 
 				// Insert into Database
-				$sql = "INSERT INTO products(product_img,product_type,product_desc,product_price) 
-				        VALUES('$new_img_name','$product_type','$product_desc','$product_price')";
+				$sql = "INSERT INTO products(product_img,product_type,product_desc,product_price,product_title) 
+				        VALUES('$new_img_name','$product_type','$product_desc','$product_price','$product_title')";
 				mysqli_query($conn, $sql);
 				header("Location: createnewproduct.php");
 			}else {
@@ -62,6 +63,10 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Put image:</label>
     <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="my_image">
+  </div>
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Title:</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="p_title">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Description:</label>
