@@ -6,7 +6,7 @@ session_start()
 include_once "dbConnection.php";
 
 //SELECT data
-$sql = "SELECT * FROM products";
+$sql = "SELECT * FROM products WHERE product_type='readymadedress'";
 
 //prapared statement
 $result=mysqli_prepare($conn, $sql);
@@ -24,7 +24,7 @@ mysqli_stmt_execute($result);
 <?php include_once("components/header.php") ?>
 
 <h1 style="text-align: center;">Ready Made Dress</h1>
-
+<div class="caontainer">
 <div class="card-group mt-4">
 <?php while(mysqli_stmt_fetch($result)){
 echo ("<div class='card' style='width: 18rem'>
@@ -39,5 +39,7 @@ echo ("<div class='card' style='width: 18rem'>
 }
 ?>
 </div>
+</div>
+
 
 <?php include_once("components/footer.php")?>

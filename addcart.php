@@ -43,6 +43,7 @@ $sql = "SELECT product_type,product_desc,product_price,product_img,product_title
         $param_img = $customer_product_imgurl;
 
         mysqli_stmt_execute($stmt);
+        
         header("location: cart.php");
 
 

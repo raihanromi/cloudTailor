@@ -51,9 +51,11 @@ $sql = "SELECT p_type,p_desc,p_price,p_imgurl,p_title FROM c_products WHERE user
 
 <h1 style="text-align: center;">Your Total Price: <?php echo $totalprice;?></h1>
 
-
+<?php if($totalprice>0): ?>
 <div class="text-center mt-4 mb-3">
-<button class="btn btn-success">Confirm</button>
+<a href="clearcheckout.php" class="btn btn-success">Confirm Checkout</a>
 </div>
+<?php endif;?>
+
 
 <?php include_once("components/footer.php")?>

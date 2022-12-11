@@ -56,7 +56,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 
 <?php  include_once("dashboardheader.php")?>
 
-<h1>Create New Product: </h1>
+<h1 style="text-align:center;">Create New Product: </h1>
 
 <div class="container mt-4">
 <form action="" method="post" enctype="multipart/form-data">
