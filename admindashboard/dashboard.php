@@ -26,7 +26,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                         //this mean password is correct
                         session_start();
                         $_SESSION["username"]=$username;
-                        $_SESSION["user_id"]=$user_id;
                         $_SESSION["loggedin"]=true;
                         //redirect user
                         header("location: createnewproduct.php");

@@ -32,7 +32,7 @@
           <a class="nav-link" href="orderstatus.php">order status</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="../logout.php">Logout</a>
+          <a class="nav-link" href="adminlogout.php">Logout</a>
         </li>
       </ul>
     </div>
