@@ -49,29 +49,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 <body>
     
-<h1 style="text-align:center">Admin Dashboard</h1>
+ <h1 style="text-align:center">Admin Dashboard</h1>
 <h1 style="text-align:center">Login</h1>
 
-<div class="container mt-4">
+<div class="">
 
 <form action="" method="post">
-      <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Username</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="username">
+      <div class="">
+    <label for="exampleInputPassword1" class="">Username</label>
+    <input type="text" class="" id="exampleInputPassword1" name="username">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+    <label for="exampleInputPassword1" class="">Password</label>
+    <input type="password" class="" id="exampleInputPassword1" name="password">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <button type="submit" class="">Submit</button>
+</form> 
+ </div> 
 
-
-</div>
 
 
 
