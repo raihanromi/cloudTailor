@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $param_address=$address;
 
     mysqli_stmt_execute($stmt);
+  header("location:clearcheckout.php");
+
 
 
 
@@ -49,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <label for="exampleInputPassword1" class="form-label">Address</label>
     <input type="text" class="form-control" id="exampleInputPassword1" name="address">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Confirm information</button>
 </form>
 
 </div>
