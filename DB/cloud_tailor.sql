@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 11, 2022 at 01:00 AM
+-- Generation Time: Dec 16, 2022 at 09:02 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.2
 
@@ -89,7 +89,29 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`) VALUES
 (1, 'raihan', 'raihansarker98@gmail.com', '$2y$10$tHdZqsnPGF8xoWQbCLniS.E6vewqA70uoy218eFal25LavHbvHa0O'),
-(3, 'r', 'dragneel728@gmail.com', '$2y$10$I0yB6kSzzk.MaCVTqcTIIuCDYvZG1FKDLdXi5BFmEC6NNwzdso/1S');
+(3, 'r', 'dragneel728@gmail.com', '$2y$10$I0yB6kSzzk.MaCVTqcTIIuCDYvZG1FKDLdXi5BFmEC6NNwzdso/1S'),
+(4, 'admin', 'admin@example.com', '$2y$10$nPFcr8sJbXBlCc85f4zlo.CSBqnUV1neoi9AdntkwSE8aiK.b5xPy');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_info`
+--
+
+CREATE TABLE `user_info` (
+  `info_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `phone_number` varchar(255) NOT NULL,
+  `address` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`info_id`, `user_id`, `name`, `phone_number`, `address`) VALUES
+(1, 1, 'Raihan Romi', '01723029189', 'Haji camp, airport to prembagan road');
 
 --
 -- Indexes for dumped tables
@@ -115,6 +137,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `user_info`
+--
+ALTER TABLE `user_info`
+  ADD PRIMARY KEY (`info_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -134,7 +162,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `user_info`
+--
+ALTER TABLE `user_info`
+  MODIFY `info_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables

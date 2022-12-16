@@ -53,7 +53,7 @@ $sql = "SELECT p_type,p_desc,p_price,p_imgurl,p_title FROM c_products WHERE user
 
 <?php if($totalprice>0): ?>
 <div class="text-center mt-4 mb-3">
-<a href="clearcheckout.php" class="btn btn-success">Confirm Checkout</a>
+<a href="customerinfo.php" class="btn btn-success">Confirm Checkout</a>
 </div>
 <?php endif;?>
 

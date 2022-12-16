@@ -17,11 +17,11 @@ mysqli_stmt_execute($result);
 
 <?php  include_once("dashboardheader.php")?>
 
-<h1>Customer oder status:</h1>
+<h1 style="text-align: center;">Customer oder status:</h1>
 
-
-<table class="table">
-  <thead>
+<div class="container mt-4">
+<table class="table table hover">
+  <thead class="table-dark">
     <tr>
       <th scope="col">User ID</th>
       <th scope="col">Product ID</th>
@@ -36,5 +36,7 @@ mysqli_stmt_execute($result);
   </tbody>
 <?php endwhile; ?>
 </table>
+
+</div>
 
 <?php  include_once("dashboardfooter.php")?>

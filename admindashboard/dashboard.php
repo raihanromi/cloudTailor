@@ -37,7 +37,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }
 }
 
-
 ?>
 
 
@@ -49,36 +48,30 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin dashboard</title>
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
+    
 </head>
 <body>
     
  <h1 style="text-align:center">Admin Dashboard</h1>
 <h1 style="text-align:center">Login</h1>
 
-<div class="">
 
+<div class="container">
 <form action="" method="post">
-      <div class="">
-    <label for="exampleInputPassword1" class="">Username</label>
-    <input type="text" class="" id="exampleInputPassword1" name="username">
+  <div class="col-md-3">
+    <label for="exampleInputEmail1" class="form-label">Username</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
+</div>
+  <div class="col-md-3 mb-4">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
   </div>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="">Password</label>
-    <input type="password" class="" id="exampleInputPassword1" name="password">
-  </div>
-  <button type="submit" class="">Submit</button>
-</form> 
- </div> 
-
-
-
-
-
-
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
 </body>
 </html>
 
